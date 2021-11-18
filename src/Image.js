@@ -115,7 +115,8 @@ class Image extends Component {
             height: this.props.height,
             marginLeft: this.props.item.marginLeft,
             marginTop: 0,
-            transform: rotationTransformValue
+            transform: rotationTransformValue,
+            lazy: "loading"
         };
     }
 
