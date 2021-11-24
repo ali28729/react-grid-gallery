@@ -235,7 +235,7 @@ class Image extends Component {
                      (e) => this.props.onClick.call(this, this.props.index, e) : null}>
                 {ThumbnailImageComponent ?
                     <ThumbnailImageComponent {...this.props} imageProps={thumbnailProps} /> :
-                    <video {...thumbnailProps} />}
+                    <img {...thumbnailProps} />}
                 </div>
                 {this.props.item.thumbnailCaption && (
                         <div className="ReactGridGallery_tile-description"
