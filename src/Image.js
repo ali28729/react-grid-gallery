@@ -233,6 +233,7 @@ class Image extends Component {
             key={"tile-viewport-"+this.props.index}
             onClick={this.props.onClick ?
                      (e) => this.props.onClick.call(this, this.props.index, e) : null}>
+                         {console.log(ThumbnailImageComponent, imageProps)}
                 {ThumbnailImageComponent ?
                     <ThumbnailImageComponent {...this.props} imageProps={thumbnailProps} /> :
                     <img {...thumbnailProps} />}
